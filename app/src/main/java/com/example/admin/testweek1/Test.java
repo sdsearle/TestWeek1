@@ -9,15 +9,14 @@ import java.util.ArrayList;
 public class Test {
     public static void main(String[] args) {
         String s = "racecar";
-        String mc;
         ArrayList<Integer> myInts = new ArrayList<>();
         myInts.add(1);
         myInts.add(2);
         myInts.add(3);
         myInts.add(4);
-        myInts.add(5);
         myInts.add(6);
-        myInts.add(7);
+        myInts.add(6);
+        myInts.add(6);
         myInts.add(8);
         myInts.add(9);
         MySingleton singleton = null;
@@ -26,9 +25,8 @@ public class Test {
         singleton = createSingleton(singleton);
 
         mostOccuring(myInts);
-        System.out.println("");
 
-        int armstrong = 371;
+        int armstrong = 1;
         isArmstrong(armstrong);
 
     }
@@ -44,6 +42,8 @@ public class Test {
             System.out.println(armstrong + " is Armstrong number");
         }
         else System.out.println(armstrong + " is NOT Armstrong number");
+
+        System.out.println();
     }
 
     //Most Occuring Number
@@ -82,7 +82,7 @@ public class Test {
         }
 
         System.out.println("Most common numbers "+ ints.toString());
-
+        System.out.println();
     }
 
     //Singleton
@@ -107,5 +107,7 @@ public class Test {
             System.out.println(s + " is a palindrome");
         }
         else System.out.println(s + " is NOT a palindrome");
+
+        System.out.println();
     }
 }
